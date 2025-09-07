@@ -1,0 +1,65 @@
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  color: #333;
+  background-color: #f0f0f0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+/* Scores Section */
+#scores {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+#human-score,
+#computer-score {
+  color: #424242;
+}
+
+/* Choices Section */
+#choices {
+  padding: 10px;
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+#rock,
+#paper,
+#scissors {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  padding: 0;
+  margin: 10px;
+  border: 2px solid #b6b6b6;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 54px;
+}
+
+/* Reset Button */
+#reset {
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: 2px solid #b6b6b6;
+  border-radius: 5px;
+  background-color: #d1ffd9;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Focus States */
+#rock:focus,
+#paper:focus,
+#scissors:focus,
+#reset:focus {
+  outline: 2px solid #4caf50;
+  outline-offset: 2px;
+}
